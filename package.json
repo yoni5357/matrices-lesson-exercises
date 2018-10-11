@@ -18,7 +18,8 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^23.4.2",
     "jest-expect-message": "^1.0.0",
-    "react-test-renderer": "^16.4.2"
+    "react-test-renderer": "^16.4.2",
+    "jest-transform-stub": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,7 +33,7 @@
     "testResultsProcessor": "./node_modules/jest-json-reporter",
     "setupTestFrameworkScriptFile": "jest-expect-message",
     "moduleNameMapper": {
-      "^.+\\.(css|less)$": "<rootDir>/.test/csstub.js"
+      "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$": "jest-transform-stub"
     }
   }
 }
