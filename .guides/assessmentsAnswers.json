@@ -1,0 +1,68 @@
+[
+ {
+  "taskId": "test-2820452769",
+  "points": 0,
+  "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nWizards link should route to Wizard directory\nBestiary link should route to Bestiary directory\n",
+    "timestamp": 1539259461847,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nWizards link should route to Wizard directory\nBestiary link should route to Bestiary directory\n",
+    "timestamp": 1539258105482,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nWizards link should route to Wizard directory\nBestiary link should route to Bestiary directory\n",
+    "timestamp": 1539257776062,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nWizards link should route to Wizard directory\nBestiary link should route to Bestiary directory\n",
+    "timestamp": 1538910178171,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "module.js:549\n    throw err;\n    ^\n\nError: Cannot find module 'jest-cli'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:2:12)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)",
+    "timestamp": 1538910011037,
+    "state": "fail"
+   },
+   {
+    "code": 1,
+    "output": "module.js:549\n    throw err;\n    ^\n\nError: Cannot find module 'jest-cli'\n    at Function.Module._resolveFilename (module.js:547:15)\n    at Function.Module._load (module.js:474:25)\n    at Module.require (module.js:596:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/home/codio/workspace/test-runner.js:2:12)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)",
+    "timestamp": 1538910008184,
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-303948028",
+  "points": 0,
+  "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nMorgana page should have a link to Merlin page\n",
+    "timestamp": 1539259474977,
+    "state": "fail"
+   }
+  ]
+ },
+ {
+  "taskId": "test-1729079255",
+  "points": 0,
+  "results": [
+   {
+    "code": 1,
+    "output": "One or more tests failed:\nWizards page should have a link to the Fentity route for each Wizard page\n/directory/:fentities/:name route should exist and display the Fentity component\n",
+    "timestamp": 1539259481138,
+    "state": "fail"
+   }
+  ]
+ }
+]
