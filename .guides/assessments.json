@@ -40,7 +40,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "So far we could only access our `directory/:fentity` routes by actually writing that out in the browser's URL... like some neanderthal savage.\n\nUsing what you know about the `Link` tag, make some static links in the `Home` component that take the user to the appropriate page.\n\nYou'll know you did it right when you can click any of these (below the search bar):\n\n![gif](https://s3-us-west-2.amazonaws.com/learn-app/lesson-images/react-router-landing.PNG)\n\n...and get to the appropriate `/directory/:fentities` route (i.e `directory/wizards` or `directory/bestiary`.\n\n**Hint**: remember, the `Link` component acts like a normal HTML tag - you can use it to wrap other HTML as well.",
-   "command": "node .test/test-runner ex-1",
+   "command": "node .guides/secure/.test/test-runner ex-1",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
@@ -58,7 +58,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "The last thing that's really missing is getting from `directory/wizards` to `directory/wizards/merlin`. You'll need to do three things:\n\n1.  Wrap the `mini` div in `Fentities` with a `Link` - it'll have to be a dynamic link\n\n*   The `to` attribute of the `Link` should resolve to (for example) `wizards/merlin` - remember you're just combining different pieces of data from the `match` object\n*   Using [string interlopation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) will be helpful\n\n3.  Create and handle the actual `/directory/:fentities/:name` route in the `App` component\n4.  Define the `fentity` variable inside `Fentity.js` - you'll use `match` as well as the `state` again\n\n*   Hint: console logging `match` again will be useful here\n\nFor the last one, since it's not really related to routes, you shouldn't spend too much time on. Here's a solution if it's taking you too long:\n\n```javascript\nconst match = this.props.match\nconst fentitiesCategory = match.params.fentities\nconst name = match.params.name\n\nconst fentity = this.props.state[fentitiesCategory].filter(f => {\n    return f.name.toLowerCase() === name.toLowerCase()\n})[0]\n```\n\n*   Get the `fentitiesCategory` just like we did before\n*   Extract the `name` from `match.params` - remember that by adding `:/name` to the end of the route adds it to the match parameters!\n*   Filter through each of the state's wizards (for example), until you find the one with the relevant name - return the first since the name should be unique\n\nWhen you figure this exercise out, then clicking Morgana in this:\n\n![](https://s3-us-west-2.amazonaws.com/learn-app/lesson-images/react-router-params-wizards.PNG)\n\n...will take you to this page:\n\n![](https://s3-us-west-2.amazonaws.com/learn-app/lesson-images/react-router-morgana-page.PNG)",
-   "command": "node .test/test-runner ex-2",
+   "command": "node .guides/secure/.test/test-runner ex-2",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
@@ -76,7 +76,7 @@
    "arePartialPointsAllowed": false,
    "oneTimeTest": false,
    "instructions": "This one is just for fun, but check out `directory/wizards/morgana le fay`'s caption at the bottom. Notice how the name `Merlin` is in there?\n\nChange Morgana's `other` field in `App`'s `state` to make it so that the word _Merlin_ is a direct link (hard-coded) to Merlin's page.",
-   "command": "node .test/test-runner ex-3",
+   "command": "node .guides/secure/.test/test-runner ex-3",
    "learningObjectives": "",
    "points": 1,
    "timeoutSeconds": 40
