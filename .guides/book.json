@@ -8,15 +8,15 @@
    "type": "page"
   },
   {
+    "title": "Exercises",
+    "id": "ceeeefd6-7ffd-b62e-74ac-802a0c68cd62",
+    "pageId": "ceeeefd6-7ffd-b62e-74ac-802a0c68cd62",
+    "type": "page"
+   },
+  {
    "id": "d1a8b113-c82d-a51c-c022-e8368f8bd9bb",
    "title": "Quiz",
    "pageId": "76c8bec5-99ce-b95e-84b3-c233c0306e0f",
-   "type": "page"
-  },
-  {
-   "title": "Exercises",
-   "id": "ceeeefd6-7ffd-b62e-74ac-802a0c68cd62",
-   "pageId": "ceeeefd6-7ffd-b62e-74ac-802a0c68cd62",
    "type": "page"
   }
  ]
