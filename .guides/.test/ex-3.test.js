@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import App from '../../../src/App';
-import Home from '../../../src/components/Home';
+import App from '../../src/App';
+import Home from '../../src/components/Home';
 import renderer from 'react-test-renderer';
 import { mount, render, shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
 import { MemoryRouter } from 'react-router-dom';
-import Fentity from '../../../src/components/Fentity';
+import Fentity from '../../src/components/Fentity';
 
 
 configure({ adapter: new Adapter() });
