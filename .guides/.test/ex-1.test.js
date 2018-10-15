@@ -14,7 +14,7 @@ configure({ adapter: new Adapter() });
 
 it('Application should render without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
