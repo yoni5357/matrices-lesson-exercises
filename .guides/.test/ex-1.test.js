@@ -20,6 +20,7 @@ it('Application should render without crashing', () => {
 
 it('Wizards link should route to Wizard directory', () => {
     const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
+    // TODO: add a smarter validation for other types of html hierarchy..
     let wizardsLink = wrapper.find('#wizards').find('span').closest("a");
     expect(wizardsLink.prop('href')).toEqual('/directory/wizards');
 });
