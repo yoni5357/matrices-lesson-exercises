@@ -25,6 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test-silent": "jest || exit 0",
     "eject": "react-scripts eject"
   },
   "jest": {
