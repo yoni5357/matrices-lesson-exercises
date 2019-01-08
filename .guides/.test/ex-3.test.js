@@ -13,22 +13,24 @@ import Fentity from '../../src/components/Fentity';
 
 configure({ adapter: new Adapter() });
 
-it('Application should render without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
-
-it('Morgana page should have a link to Merlin page', () => {
-    const wrapper = render(
-    <MemoryRouter initialEntries={['/directory/wizards/Morgana Le Fay']} >
-        <App />
-    </MemoryRouter>);
-    let miniDiv = wrapper.find('.other').first();
-    let linkElement = miniDiv.find('a').first();
-    expect(linkElement.prop('href').toLowerCase()).toEqual('/directory/wizards/merlin');
-    
-});
+describe("Exercise 3:", () => {
+    it('Application should render without crashing', () => {
+        const div = document.createElement('div');
+        ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);
+        ReactDOM.unmountComponentAtNode(div);
+      });
+      
+      it('Morgana page should have a link to Merlin page', () => {
+          const wrapper = render(
+          <MemoryRouter initialEntries={['/directory/wizards/Morgana Le Fay']} >
+              <App />
+          </MemoryRouter>);
+          let miniDiv = wrapper.find('.other').first();
+          let linkElement = miniDiv.find('a').first();
+          expect(linkElement.prop('href').toLowerCase()).toEqual('/directory/wizards/merlin');
+          
+      });
+})
 
 
 

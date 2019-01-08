@@ -12,24 +12,28 @@ import { MemoryRouter } from 'react-router-dom';
 
 configure({ adapter: new Adapter() });
 
-it('Application should render without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe("Exercise 1:", () => {
+    it('Application should render without crashing', () => {
+        const div = document.createElement('div');
+        ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);
+        ReactDOM.unmountComponentAtNode(div);
+      });
+      
+      it('Wizards link should route to Wizard directory', () => {
+          const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
+          // TODO: add a smarter validation for other types of html hierarchy..
+          let wizardsLink = wrapper.find('#wizards').find('span').closest("a");
+          expect(wizardsLink.prop('href')).toEqual('/directory/wizards');
+      });
+      
+      it('Bestiary link should route to Bestiary directory', () => {
+          const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
+          let bestiaryLink = wrapper.find('#bestiary').find('span').closest("a");
+          expect(bestiaryLink.prop('href')).toEqual('/directory/bestiary');
+      });
+})
 
-it('Wizards link should route to Wizard directory', () => {
-    const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
-    // TODO: add a smarter validation for other types of html hierarchy..
-    let wizardsLink = wrapper.find('#wizards').find('span').closest("a");
-    expect(wizardsLink.prop('href')).toEqual('/directory/wizards');
-});
 
-it('Bestiary link should route to Bestiary directory', () => {
-    const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
-    let bestiaryLink = wrapper.find('#bestiary').find('span').closest("a");
-    expect(bestiaryLink.prop('href')).toEqual('/directory/bestiary');
-});
 
 
 

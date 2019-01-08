@@ -6,7 +6,7 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'test-silent']
 - name: 'gcr.io/eloquent-hour-220409/test-results-reporter'
-  args: ['https://hnvbmypjh9.execute-api.eu-central-1.amazonaws.com/prod/builds', './test-results.json']  
+  args: ['https://hnvbmypjh9.execute-api.eu-central-1.amazonaws.com/prod/build-emails', './test-results.json']  
   env:
     - 'BUILD=$BUILD_ID'
     - 'REPO=$REPO_NAME'
