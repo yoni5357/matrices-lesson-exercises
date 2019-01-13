@@ -3,7 +3,7 @@ import './App.css';
 
 class App extends Component {
   constructor() {
-    
+
     super()
     this.state = {
       wizards: [
@@ -18,6 +18,7 @@ class App extends Component {
       ]
     }
   }
+  
   
   render() {
     const state = this.state
