@@ -4,11 +4,10 @@ import assert from 'assert';
 import App from '../../src/App';
 import Home from '../../src/components/Home';
 import renderer from 'react-test-renderer';
-import { mount, render, shallow, configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { wrap } from 'module';
 import { MemoryRouter } from 'react-router-dom';
-
+import { mount, render, shallow, configure} from 'enzyme';
 
 configure({ adapter: new Adapter() });
 
@@ -23,7 +22,7 @@ describe("exercise1", () => {
           const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
           // TODO: add a smarter validation for other types of html hierarchy..
           let wizardsLink = wrapper.find('#wizards').find('span').closest("a");
-          expect(wizardsLink.prop('href'), "link doesn't work").toEqual('/directory/wizards');
+          expect(wizardsLink.prop('href'), `the function should return ${value}, but it returned ${othervalue}`).toEqual('/directory/wizards');
       });
       
       it('Bestiary link should route to Bestiary directory', () => {

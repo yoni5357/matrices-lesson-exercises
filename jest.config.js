@@ -1,6 +1,5 @@
 module.exports = {
     "verbose": true,
-    "testEnvironment": 'node',
     "testURL": "http://localhost/",
     "testResultsProcessor": "./node_modules/jest-json-reporter",
     "setupTestFrameworkScriptFile": "jest-expect-message",
