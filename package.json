@@ -27,14 +27,5 @@
     "test": "react-scripts test --env=jsdom",
     "test-silent": "jest || exit 0",
     "eject": "react-scripts eject"
-  },
-  "jest": {
-    "verbose": true,
-    "testURL": "http://localhost/",
-    "testResultsProcessor": "./node_modules/jest-json-reporter",
-    "setupTestFrameworkScriptFile": "jest-expect-message",
-    "moduleNameMapper": {
-      "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$": "jest-transform-stub"
-    }
   }
 }

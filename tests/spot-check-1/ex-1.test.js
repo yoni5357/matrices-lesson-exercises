@@ -23,7 +23,7 @@ describe("exercise1", () => {
           const wrapper = render(<MemoryRouter><Home /></MemoryRouter>);
           // TODO: add a smarter validation for other types of html hierarchy..
           let wizardsLink = wrapper.find('#wizards').find('span').closest("a");
-          expect(wizardsLink.prop('href')).toEqual('/directory/wizards');
+          expect(wizardsLink.prop('href'), "link doesn't work").toEqual('/directory/wizards');
       });
       
       it('Bestiary link should route to Bestiary directory', () => {
