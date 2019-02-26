@@ -12,7 +12,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 configure({ adapter: new Adapter() });
 
-describe("Exercise 1:", () => {
+describe("exercise1", () => {
     it('Application should render without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);

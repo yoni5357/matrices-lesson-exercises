@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import assert from 'assert';
-import App from '../../src/App';
+import App from '../../../src/App';
 import Home from '../../src/components/Home';
 import renderer from 'react-test-renderer';
 import { mount, render, shallow, configure} from 'enzyme';
@@ -13,7 +13,7 @@ import Fentity from '../../src/components/Fentity';
 
 configure({ adapter: new Adapter() });
 
-describe("Exercise 3:", () => {
+describe("exercise3", () => {
     it('Application should render without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<MemoryRouter><App /></MemoryRouter>, div);
