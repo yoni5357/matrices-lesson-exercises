@@ -1,6 +1,6 @@
 {
-    "presets": ["env", "react"],
+    "presets": [],
     "plugins": [
-        ["transform-class-properties",  "react-html-attrs", { "spec": true }]
+        ["transform-class-properties", { "spec": true }]
       ]
 }
