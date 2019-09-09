@@ -7,11 +7,6 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.0
-      - image: circleci/mysql:5.5
-        environment:
-          MYSQL_ALLOW_EMPTY_PASSOWRD: yes
-          MYSQL_USER: 'root'
-          MYSQL_DATABASE: 'sql_intro'
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
