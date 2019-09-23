@@ -69,22 +69,7 @@ class Matrix {
 
 
 //You can paste the code from the lesson below to test your solution
-let m = new Matrix(5, 6)
-m.print()
-//prints
-/*
-1       2       3       4
-5       6       7       8
-9       10      11      12
-*/
 
-m.alter(0, 0, m.get(1, 1))
-m.printColumn(0) //prints 6, 5, 9 (separate lines)
-m.printRow(0) //prints 6, 2, 3, 4 (separate lines)
-// console.log(m.findCoordinate(22))
-
-console.log(m.findCoordinate(11)) //prints {x: 3, y: 2}
-console.log(m.findCoordinate(15)) //prints {x: 2, y: 1}
 
 
 
