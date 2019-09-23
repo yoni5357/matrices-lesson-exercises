@@ -1,4 +1,5 @@
 let Matrix
+
 try {
     Matrix = require('../../src/Matrix')
 } catch (error) {

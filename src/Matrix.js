@@ -81,7 +81,10 @@ m.print()
 m.alter(0, 0, m.get(1, 1))
 m.printColumn(0) //prints 6, 5, 9 (separate lines)
 m.printRow(0) //prints 6, 2, 3, 4 (separate lines)
+// console.log(m.findCoordinate(22))
 
+console.log(m.findCoordinate(11)) //prints {x: 3, y: 2}
+console.log(m.findCoordinate(15)) //prints {x: 2, y: 1}
 
 
 
