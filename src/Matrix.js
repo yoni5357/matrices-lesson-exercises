@@ -69,7 +69,7 @@ class Matrix {
 
 
 //You can paste the code from the lesson below to test your solution
-let m = new Matrix(3, 4)
+let m = new Matrix(6, 6)
 m.print()
 //prints
 /*
