@@ -25,6 +25,14 @@ describe('exercise1', () => {
     })
 
     it(`should create a class Matrix with the method 'alter' which receives a coordinate and value and alters that coordinate to the given value`, function () {
-        
+        const m = new Matrix(5, 6)
+
+        m.alter(1, 2, 10)
+        let result = m.get(1, 2)
+        expect(result, `when creating a 5x6 matrix running 'alter(1, 2, 10)', the 'get(1, 2)' method should return 10, instead got ${result}`).toBe(10)
+
+        m.alter(4, 1, 99)
+        result = m.get(4, 1)
+        expect(result, `when creating a 5x6 matrix running 'alter(4, 1, 99)', the 'get(4, 1)' method should return 99, instead got ${result}`).toBe(99)
     })
 })
